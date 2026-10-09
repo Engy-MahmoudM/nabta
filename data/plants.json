@@ -1,0 +1,29 @@
+[
+  {
+    "id": "96a577ba-8e2e-4da0-acad-cfd3e40ca587",
+    "name": "tomato",
+    "species": "",
+    "location": "Balcony",
+    "light": "Not sure",
+    "watering": "Check soil before watering",
+    "notes": "",
+    "created": "2026-10-10",
+    "updates": []
+  },
+  {
+    "id": "2a8ebed5-291a-487f-abca-4111edc9af8a",
+    "name": "bata",
+    "species": "potato",
+    "location": "Garden",
+    "light": "Bright indirect light",
+    "watering": "Daily",
+    "notes": "",
+    "created": "2026-10-10",
+    "updates": [
+      {
+        "date": "2026-10-10",
+        "note": "i see a leaf"
+      }
+    ]
+  }
+]

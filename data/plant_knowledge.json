@@ -1,0 +1,61 @@
+[
+  {
+    "title": "Watering and drainage basics",
+    "text": "Watering needs depend on plant species, pot size, substrate, weather, and growth stage. Check soil moisture before watering. Containers should have drainage holes; standing water can deprive roots of oxygen and contribute to root problems. Avoid diagnosing overwatering or underwatering from yellow leaves alone.",
+    "source": "General horticultural guidance; confirm species-specific advice with a local extension service.",
+    "tags": [
+      "watering",
+      "yellow leaves",
+      "drainage",
+      "roots",
+      "overwatering",
+      "underwatering",
+      "pot"
+    ]
+  },
+  {
+    "title": "Plant identification from photos",
+    "text": "For a stronger plant identification, photograph the whole plant and clear close-ups of leaves, leaf arrangement, stems, flowers, or fruit. Record the growing location and season. A single image may not show diagnostic features, so report a likely match with uncertainty.",
+    "source": "General botanical identification practice.",
+    "tags": [
+      "identify",
+      "species",
+      "photo",
+      "image",
+      "plant name",
+      "leaves",
+      "flower"
+    ]
+  },
+  {
+    "title": "Growing with heat and limited water",
+    "text": "In hot climates, select species suited to local conditions, acclimate plants to stronger sunlight gradually, use containers with drainage, and check moisture more frequently during hot or windy weather. Mulch can reduce evaporation in appropriate outdoor settings. Water at the root zone and avoid a fixed schedule that ignores soil moisture and plant needs.",
+    "source": "General water-wise horticultural guidance; adapt to the species and local season.",
+    "tags": [
+      "Egypt",
+      "Cairo",
+      "heat",
+      "sun",
+      "water",
+      "balcony",
+      "rooftop",
+      "drought",
+      "mulch"
+    ]
+  },
+  {
+    "title": "Yellow leaves: differential diagnosis",
+    "text": "Yellow leaves can result from natural aging, root-zone water stress, drainage problems, nutrient imbalance, pests, disease, or environmental stress. Observe whether old or new leaves are affected, whether symptoms are uniform or spotted, soil moisture, drainage, recent changes, and pests under leaves. Avoid applying fertilizer or pesticide until evidence supports the cause.",
+    "source": "General plant-health troubleshooting guidance.",
+    "tags": [
+      "yellow",
+      "yellowing",
+      "leaves",
+      "disease",
+      "pests",
+      "nutrients",
+      "fertilizer",
+      "symptom"
+    ]
+  }
+]
