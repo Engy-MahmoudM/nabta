@@ -59,9 +59,9 @@ div[data-testid="stChatMessage"] *{color:#f5f7ef!important}
 div[data-testid="stChatMessage"] a{color:#d5e9a9!important;text-decoration:underline}
 div[data-testid="stChatMessage"] [data-testid="stMarkdownContainer"] p{line-height:1.75}
 div[data-testid="stChatMessage"] code{background:#ffffff16!important;color:#eff6e9!important}
-[data-testid="stChatInput"]{border:1px solid #cddbc9!important;border-radius:18px!important;background:#fff!important;box-shadow:0 8px 24px #173e2d0d!important}
-[data-testid="stChatInput"] textarea{color:#20332b!important}
-[data-testid="stChatInput"] textarea::placeholder{color:#78867c!important}
+[data-testid="stChatInput"]{border:1px solid #cddbc9!important;border-radius:18px!important;background:#ffffff!important;box-shadow:0 8px 24px #173e2d0d!important}
+[data-testid="stChatInput"] textarea, [data-testid="stChatInput"] input, [data-baseweb="textarea"] textarea{color:#163f35!important;-webkit-text-fill-color:#163f35!important;background:#ffffff!important}
+[data-testid="stChatInput"] textarea::placeholder{color:#78867c!important;-webkit-text-fill-color:#78867c!important}
 [data-testid="stFileUploader"]{background:#fff;border:1px dashed #a9c29f;border-radius:14px;padding:.6rem}
 .stButton button,.stDownloadButton button{border-radius:12px;font-weight:700;min-height:2.6rem}
 .stButton button[kind="primary"]{background:#24664c;border-color:#24664c;color:#fff}
