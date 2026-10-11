@@ -59,9 +59,32 @@ div[data-testid="stChatMessage"] *{color:#f5f7ef!important}
 div[data-testid="stChatMessage"] a{color:#d5e9a9!important;text-decoration:underline}
 div[data-testid="stChatMessage"] [data-testid="stMarkdownContainer"] p{line-height:1.75}
 div[data-testid="stChatMessage"] code{background:#ffffff16!important;color:#eff6e9!important}
-[data-testid="stChatInput"]{border:1px solid #cddbc9!important;border-radius:18px!important;background:#ffffff!important;box-shadow:0 8px 24px #173e2d0d!important}
-[data-testid="stChatInput"] textarea, [data-testid="stChatInput"] input, [data-baseweb="textarea"] textarea{color:#163f35!important;-webkit-text-fill-color:#163f35!important;background:#ffffff!important}
-[data-testid="stChatInput"] textarea::placeholder{color:#78867c!important;-webkit-text-fill-color:#78867c!important}
+
+/* Bulletproof Chat Input: forces dark green text in both Dark & Light browser modes */
+[data-testid="stChatInput"],
+.stChatInputContainer,
+div[data-baseweb="textarea"]{
+    background-color: #ffffff !important;
+    border: 1px solid #cddbc9 !important;
+    border-radius: 18px !important;
+    box-shadow: 0 8px 24px #173e2d0d !important;
+}
+[data-testid="stChatInput"] textarea,
+[data-testid="stChatInput"] input,
+.stChatInputContainer textarea,
+div[data-baseweb="textarea"] textarea,
+div[data-baseweb="textarea"] input{
+    color: #163f35 !important;
+    -webkit-text-fill-color: #163f35 !important;
+    caret-color: #163f35 !important;
+    background-color: #ffffff !important;
+}
+[data-testid="stChatInput"] textarea::placeholder,
+.stChatInputContainer textarea::placeholder{
+    color: #78867c !important;
+    -webkit-text-fill-color: #78867c !important;
+}
+
 [data-testid="stFileUploader"]{background:#fff;border:1px dashed #a9c29f;border-radius:14px;padding:.6rem}
 .stButton button,.stDownloadButton button{border-radius:12px;font-weight:700;min-height:2.6rem}
 .stButton button[kind="primary"]{background:#24664c;border-color:#24664c;color:#fff}
@@ -161,7 +184,7 @@ if page == "Plant Companion":
         st.markdown('<div class="feature-card"><div class="feature-top">03 · Grow</div><div class="feature-title">Build your routine</div><div class="feature-copy">Get manageable next steps for your space, experience level, and water availability.</div></div>', unsafe_allow_html=True)
 
     st.markdown('<div class="section-title">Your growing journey starts here</div><div class="section-sub">Ask in your own words. You can attach a plant photo to the same message, and Nabta will use your conversation to tailor its advice.</div>', unsafe_allow_html=True)
-    
+
     # Quick suggestion chips
     st.markdown("**Quick questions to try:**")
     sc1, sc2, sc3 = st.columns(3)
@@ -178,7 +201,7 @@ if page == "Plant Companion":
             if msg.get("image_preview"):
                 st.image(msg["image_preview"], caption="Photo shared in this message", width=220)
             st.markdown(msg["content"])
-            
+
     if not st.session_state.messages:
         with st.chat_message("assistant", avatar="🌿"):
             st.markdown("**Ahlan! I’m Nabta.** 🌱\n\nAre you growing your very first plant, or looking after a whole garden? Ask me anything — from identifying a plant to helping it recover. If you have a photo, attach it with your question.\n\n*For example: “I’m a beginner in Alexandria. What herbs can I grow on a sunny balcony without wasting water?”*")
